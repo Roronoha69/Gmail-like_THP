@@ -16,11 +16,4 @@
 //= require_tree .
 
 
-let email = document.getElementsById("section");
-
-email.addEventListener("click", read);
-function read() {
-    email.style.color = 'red';
-}
-
 
