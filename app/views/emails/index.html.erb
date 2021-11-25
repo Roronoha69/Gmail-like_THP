@@ -1,0 +1,32 @@
+<link src="app/assets/stylesheets/application.css">
+
+<body>
+
+<div class="section">
+
+  <div class="small-section-left">
+    <h2>Liste des emails</h2>
+    <center>
+    
+    <%= link_to(emails_path, method: :post, class: "form", remote: true) do %>
+    <%= submit_tag 'Recevoir un email', :object => 'commit'%>
+    <% end %>
+    </center>
+  <div id="email-list">  
+  <ul id = "email-list">
+    <% @emails.each do |email| %>
+          <%= render 'email', email: email %>
+        <% end %>
+  </ul>
+  </div>
+  </div>
+
+
+  <div class="small-section-right">
+    <h2>Email sélectionné</h2>
+
+  </div>
+</div>
+
+</body>
+
