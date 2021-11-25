@@ -1,24 +1,26 @@
-# README
+# THP - Projet:  Ajax - 100code - Gmail
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![](https://media.discordapp.net/attachments/891960149642715157/913452552614449212/Gmailike.png)
 
-Things you may want to cover:
+<a href="https://gmail-like-100codee.herokuapp.com/">Gmail-Like by 100Code</a>
 
-* Ruby version
+## Présentation
 
-* System dependencies
+On vous présente notre Gmail-Like Ajax, une sorte de Gmail en fait maison enjoy !
 
-* Configuration
+## Fonctionnalités
 
-* Database creation
+- Génère un email
+- Une view en directe
+- Lu / Non-lu update opérationnel !
+- Supprime des emails a ta guise
+- Clique n'importe ou dans la case de ton email pour l'ouvrir quoi qu'il arrive, nice ou pas ?
 
-* Database initialization
+## Team 100Code
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Lucas alias Haaji
+Valentin alias Okhmhaka
+Quentin alias Elco
+Romuald alias Aza
+Justin alias Roronoha
+Et le D.Carry
