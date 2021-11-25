@@ -1,3 +1,29 @@
-<%= link_to email_path(email.id), method: :get, class: 'link-show', remote: true do %>
- <li>Object : <b><%= email.object %></b> </li>
+
+
+<% if email.read == true%>
+
+  <%= link_to email_path(email.id), method: :get, class: 'link-show', remote: true do %>
+    <li class='mail-<%= email.id %>'><b>Object :</b> 
+    <div class="object">
+      <%= email.object %>
+      </div>
+        <span class='read-tag'>
+          Lu  
+        </span>
+    </li>
+     
 <% end %>
+
+<% else %>
+
+  <%= link_to email_path(email.id), method: :get, class: 'link-show', remote: true do %>
+    <li class='mail-<%= email.id %>'><b>Object :</b> 
+    <div class="object not">
+      <%= email.object %>
+      </div>
+        <span class='not read-tag'>
+          Non-lu  
+        </span>
+    </li>
+  <%end%>
+<%end%>

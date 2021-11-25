@@ -1,5 +1,13 @@
 document.querySelector(".small-section-right").innerHTML = "<%= j render 'email_body', email: @email %>";
 
+<% @email.update(read: true) %>
+document.querySelector(".mail-<%= @email.id %> .object").classList.remove("not");
+document.querySelector(".mail-<%= @email.id %> .read-tag").innerText = "Lu";
+
+
+
+
+
 
 
 

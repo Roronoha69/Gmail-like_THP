@@ -1,7 +1,13 @@
+
 <h2>Email sélectionné</h2>
 
 <h3 id="email-object"><%= email.object %></h3>
 <p id="email-body" class="text-justify"><%= email.body %></p>
 
-<%= link_to 'Marquer comme lu', email_path(email.id), remote: true, method: 'put', class: "btn" %>
+
+<%= link_to 'Marquer comme non-lu', email_path(email.id), remote: true, method: 'put', class: "btn" %>
 <%= link_to 'Supprimer', email_path(email.id), remote: true, method: 'delete', class: "btn" %>
+
+
+
+
